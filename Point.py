@@ -1,11 +1,13 @@
 import math
 
+
 class Point(object):
     """Represents a point in two-dimensional geometric coordinates"""
+
     def __init__(self, x=0, y=0):
         """Initialize the position of a new point. The x and y coordinates
         can be specified. If they are not, the point defaults to the origin."""
-        self.move(x,y)
+        self.move(x, y)
 
     def move(self, x, y):
         """Move the point to a new location in two-dimensional space."""
@@ -22,6 +24,11 @@ class Point(object):
         This function uses the pythagorean theorem to calculate
         the distance  between the two points. The distance is returned as float."""
 
-        return math.sqrt((self.x - other_point.x)**2 + (self.y - other_point.y)**2)
+        return math.sqrt((self.x - other_point.x) ** 2 + (self.y - other_point.y) ** 2)
 
 
+point_a = Point(2, -2)
+point_b = Point(2, 2)
+# distance entry a and b
+distance = point_a.calculate_distance(point_b)
+print(distance)
