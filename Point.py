@@ -30,6 +30,11 @@ class Point(object):
 # Creating instance objects
 point_a = Point(2, -2)
 point_b = Point(2, 2)
+
+point_x = Point(0, 0)
+point_y = Point(7, 1)
 # distance entry a and b
-distance = point_a.calculate_distance(point_b)
-print(distance)
+distance_a = point_a.calculate_distance(point_b)
+distance_b = point_x.calculate_distance(point_y)
+print(distance_a)
+print(distance_b)
